@@ -68,7 +68,7 @@ bash EndolysinFinder.sh [options]
 ```
 | Option | Description | Default |
 | --- | --- | --- |
-| `-h` | Show help documentation. | (无默认值，触发帮助信息) |
+| `-h` | Show help documentation. |  |
 | `-i` | Specify the input directory containing input files. | `input` |
 | `-v` | Specify the Vibrant conda environment name. | `new_vibrant` |
 | `-c` | Specify the CheckV conda environment name. | `checkv` |
@@ -106,17 +106,18 @@ Uses hmmscan and hmmsearch to annotate and identify endolysin-related sequences.
 ### Generating Results:
 
 Extracts, annotates, and ranks HMMER results.
-Produces a summary table (final.txt) and other intermediate outputs.
-Output Files
-Directory/File	Description
-vibrant-output/	Output from Vibrant analysis.
-fnas/	Extracted .fna files.
-checkv_output/	Results from CheckV analysis.
-gbk-faa-out/	Extracted protein sequences.
-checked_seqs/	Filtered protein sequences.
-hmmer-input-uniq/	Deduplicated input sequences for HMMER.
-hmm_run/result/	Results from HMMER annotation.
-final.txt	Consolidated final results with annotations.
+Produces a summary table (`final.txt`) and other intermediate outputs.
+### Output Files
+| Directory/File | Description |
+| --- | --- |
+| `vibrant-output/` | Output from Vibrant analysis. |
+| `fnas/` | Extracted `.fna` files. |
+| `checkv_output/` | Results from CheckV analysis. |
+| `gbk-faa-out/` | Extracted protein sequences. |
+| `checked_seqs/` | Filtered protein sequences. |
+| `hmmer-input-uniq/` | Deduplicated input sequences for HMMER. |
+| `hmm_run/result/` | Results from HMMER annotation. |
+| `final.txt` | Consolidated final results with annotations. |
 ## Examples
 ### 1. Default Run
 ```bash
@@ -127,15 +128,20 @@ bash EndolysinFinder.sh
 bash EndolysinFinder.sh -i /data/input -d /data/checkv-db -b /data/hmmscan-db/Pfam-A.hmm -t 20 -n 4
 ```
 ## Troubleshooting
-Input Directory Not Found: Ensure the input directory exists and contains valid .fna files.
+- Unable to use vibrant or checkv: activate the conda environment where the vibrant and checkv are located, for example, `source ~/miniconda3/bin/activate`
 
-CheckV Database Not Found: Verify the database path is correct and accessible. Use the -d option to specify the database path.
+- The environment names for new_vibrant and checkv were not found: -v and -c were used to specify the actual environment names, respectively
 
-No Suitable .fna Files Found: Ensure input files are correctly formatted and the directory is not empty.
+- Input Directory Not Found: Ensure the input directory exists and contains valid .fna files.
 
-HMMER Errors: Confirm the HMMER database and model directories are correctly specified with -b and -s.
+- CheckV Database Not Found: Verify the database path is correct and accessible. Use the -d option to specify the database path.
 
-Contributors
+- No Suitable .fna Files Found: Ensure input files are correctly formatted and the directory is not empty.
+
+- HMMER Errors: Confirm the HMMER database and model directories are correctly specified with -b and -s.
+
+## Contributors
 Author: Shengwei Hu, Ruirui Hu, Fulin Li
+***
 Email: 2891345454@qq.com
 
