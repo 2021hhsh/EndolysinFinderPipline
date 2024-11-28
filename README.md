@@ -5,20 +5,20 @@ The EndolysinFinder Pipeline is designed to mine bacterial genomes for endolysin
 ## Features
 The EndolysinFinder Pipeline automates multiple steps in bacterial genomic analysis:
 
--**Phage Detection**: Uses Vibrant to identify prophages in bacterial genomes.
--**Phage Screening**: Uses CheckV to evaluate the quality of prophages.
--**Endolysin Prediction**: Uses HMMER to predict endolysins and annotate results.
+**Phage Detection**: Uses Vibrant to identify prophages in bacterial genomes.
+**Phage Screening**: Uses CheckV to evaluate the quality of prophages.
+**Endolysin Prediction**: Uses HMMER to predict endolysins and annotate results.
 This pipeline supports parallel processing with customizable thread and process options, ensuring efficient execution even with large datasets. Its modular design allows for flexible customization of environments and databases.
 
 ## Requirements
 ## Dependencies
--**Operating System**: Unix/Linux environment with Bash.
--**Environment Manager**: Conda.
--**Installed Tools**:
--Vibrant for phage detection.
--CheckV for prophage quality assessment.
--HMMER for functional annotation.
--**Custom Scripts**: Located in the `scripts/` directory.
+**Operating System**: Unix/Linux environment with Bash.
+**Environment Manager**: Conda.
+**Installed Tools**:
+- Vibrant for phage detection.
+- CheckV for prophage quality assessment.
+- HMMER for functional annotation.
+**Custom Scripts**: Located in the `scripts/` directory.
 ## Input
 The input should be nucleic acid sequence files in .fna format. These files must be placed in the input directory before running the pipeline.
 
