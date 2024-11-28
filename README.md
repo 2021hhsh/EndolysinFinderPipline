@@ -34,6 +34,7 @@ conda env create -f vibrant.yml
 Alternatively, follow the installation guide on the Vibrant GitHub repository.
 
 Vibrant GitHub Repository: https://github.com/AnantharamanLab/VIBRANT
+
 Vibrant Documentation: https://vibrant.readthedocs.io/
 
 Installing CheckV
@@ -44,7 +45,8 @@ conda env create -f checkv.yml
 Alternatively, refer to the CheckV installation guide:
 
 CheckV Documentation: https://bitbucket.org/berkeleylab/checkv/src/master/
-Database Files
+
+###### Database Files
 CheckV Database: Use the following command to download the database:
 
 
