@@ -118,12 +118,12 @@ Input Directory Not Found: Ensure the input directory exists and contains valid 
 
 CheckV Database Not Found: Verify the database path is correct and accessible. Use the -d option to specify the database path.
 
-No Suitable .faa Files Found: Ensure input files are correctly formatted and the directory is not empty.
+No Suitable .fna Files Found: Ensure input files are correctly formatted and the directory is not empty.
 
 HMMER Errors: Confirm the HMMER database and model directories are correctly specified with -b and -s.
 
 Contributors
-Author: Ruirui Hu, Fulin Li
+Author: Shengwei Hu, Ruirui Hu, Fulin Li
 Email: 2891345454@qq.com
 License
 This script is licensed under [Your Preferred License].
