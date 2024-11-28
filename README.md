@@ -125,5 +125,4 @@ HMMER Errors: Confirm the HMMER database and model directories are correctly spe
 Contributors
 Author: Shengwei Hu, Ruirui Hu, Fulin Li
 Email: 2891345454@qq.com
-License
-This script is licensed under [Your Preferred License].
+
